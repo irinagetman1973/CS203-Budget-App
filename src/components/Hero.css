@@ -1,0 +1,12 @@
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    object-fit: contain;
+}
+.hero-container > h1{
+    color: #263238;
+    font-size: 48px;
+}
