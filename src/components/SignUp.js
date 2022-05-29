@@ -1,18 +1,13 @@
 import React from "react";
+import { Navbar } from "./Navbar";
 
 export const SignUp = () =>{
     return (
         <>
-         <nav className="navbar">
-             <div className='navbar-container'>
-                 <span className='Budget-logo'>Budget</span>
-                 <span className='App-logo'>App</span>
-             </div>
-         </nav>
+         <Navbar></Navbar>
          
-
         <div className="base-container">
-            <div className="header">Login</div>
+            <div className="header">Sign Up</div>
             <div className="content"></div>
             <div className="form">
             <div className="form-group">
@@ -30,7 +25,7 @@ export const SignUp = () =>{
             </div>
             <div className="footer">
                 <button type="button" className="btn">
-                    Login
+                    Sign Up
                 </button>
             </div>
         </div>
