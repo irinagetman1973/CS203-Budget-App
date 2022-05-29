@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom
 import './App.css';
 
 import Home from '../src/pages/Home'
-// import Login from '../src/pages/Login'
-// import SignUp from '../src/pages/SignUp'
+import Login from '../src/pages/Login'
+import SignUp from '../src/pages/SignUp'
 // import Dashboard from '../src/pages/Dashboard'
 // import Expenses from '../src/pages/Expenses'
 // import Income from '../src/pages/Income'
@@ -17,9 +17,9 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/'  element=  {<Home/>} />
-          {/* <Route path='/sign-up' element=  {<SignUp/>} />
+          <Route path='/sign-up' element=  {<SignUp/>} />
           <Route path='/log-in' element=   {<Login/>} />
-          <Route path='/dashboard' element={<Dashboard/>} />
+          {/*<Route path='/dashboard' element={<Dashboard/>} />
           <Route path='/budget' element=   {<Budget/>} />
           <Route path='/income' element=   {<Income/>} />
           <Route path='/expenses' element= {<Expenses/>} />
