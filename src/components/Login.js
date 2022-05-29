@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
 import React from "react";
 import { Navbar } from "./Navbar";
+import './Buttons.css';
 
 export const Login = () =>{
      return (
@@ -21,9 +22,9 @@ export const Login = () =>{
                 </div>
             </div>
             <div className="footer">
-                <button type="button" className="btn">
-                    Login
-                </button>
+            <button className='login-btn'>
+                 Log in
+            </button>
             </div>
         </div>
         </>

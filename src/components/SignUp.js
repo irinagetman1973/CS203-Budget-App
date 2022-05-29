@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "./Navbar";
+import './Buttons.css';
 
 export const SignUp = () =>{
     return (
@@ -24,9 +25,9 @@ export const SignUp = () =>{
                 </div>
             </div>
             <div className="footer">
-                <button type="button" className="btn">
-                    Sign Up
-                </button>
+            <button className='sign-btn'>
+                 Sign Up
+            </button>
             </div>
         </div>
         </>
