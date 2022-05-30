@@ -1,4 +1,3 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import { Navbar } from "./Navbar";
 import './Buttons.css';
@@ -9,9 +8,9 @@ export const Login = () =>{
          <Navbar></Navbar>
       
         <div className="base-container">
-            <div className="header">Login</div>
+            <div className="header">LOG IN</div>
             <div className="content"></div>
-            <div className="form">
+            <div className="form1">
                 <div className="form-group">
                     <label htmlFor="username">Username</label>
                     <input type="text" name="username" placeholder="username"/>
