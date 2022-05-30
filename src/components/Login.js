@@ -21,9 +21,11 @@ export const Login = () =>{
                 </div>
             </div>
             <div className="footer">
-            <button className='login-btn'>
-                 Log in
-            </button>
+                <div className="button">
+                    <button className='login-btn'>
+                        Log in
+                    </button>
+                </div>
             </div>
         </div>
         </>
