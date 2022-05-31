@@ -6,11 +6,11 @@ export const SignUp = () =>{
     return (
         <>
 
-        <div className="image"></div>
+
          <Navbar></Navbar>
-         
+         <div className="image"></div>
         <div className="base-container">
-            <div className="header">CREATE NEW ACCOUNT:</div>
+            <div className="header2">CREATE NEW ACCOUNT:</div>
             <div className="content"></div>
                 <div className="form2">
                     <div className="form-group">

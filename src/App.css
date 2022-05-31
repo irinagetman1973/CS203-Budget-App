@@ -29,8 +29,11 @@ body {
     margin-top: 0%;
 }
 
+.navbar {
+    padding: 12px;
+}
+
 .navbar-container{
-   padding: 30px;
    width: 140px;
    height: 60px;
 }

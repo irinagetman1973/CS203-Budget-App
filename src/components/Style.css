@@ -21,11 +21,19 @@
   background-attachment: fixed;
 }
 
-.header {
+.header1 {
   font-size: 24px;
   font-family: 'Patrick Hand', cursive, sans-serif;
-  position: absolute;
-  right: 33%;
+  position: relative;
+  left: 23%;
+  padding-top: 5%;
+}
+
+.header2 {
+  font-size: 24px;
+  font-family: 'Patrick Hand', cursive, sans-serif;
+  position: relative;
+  left: 23%;
   padding-top: 5%;
 }
 
@@ -37,9 +45,8 @@
 }
 
 .form1 {
-  position: absolute;
-  right: 25.5%;
-  padding-top: 10%;
+  position: relative;
+  right: 13.5%;
   padding-left: 75%;
   margin-top: 2em;
   display: flex;
@@ -71,10 +78,8 @@ label {
 }
 
 .button {
-  position: absolute;
-  right: 25%;
-  padding-top: 10%;
-  padding-left: 75%;
+  position: relative;
+  right: -150%;
 }
 
 input {
@@ -92,5 +97,5 @@ input {
 }
 
 .footer {
-    margin-top: 3em;
+  margin-top: 3em;
 }

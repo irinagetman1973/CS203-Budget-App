@@ -6,11 +6,11 @@ export const Login = () =>{
     return (
          <>
 
-         <div className="image"></div>
+         
             <Navbar></Navbar>
-                
+            <div className="image"></div>
                 <div className="base-container">
-                    <div className="header">LOG IN</div>
+                    <div className="header1">LOG IN</div>
                     <div className="content"></div>
                     <div className="form1">
                         <div className="form-group">
