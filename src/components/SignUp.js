@@ -1,10 +1,12 @@
-import React from "react";
-import { Navbar } from "./Navbar";
+import React from 'react';
+import { Navbar } from './Navbar';
 import './Buttons.css';
 
 export const SignUp = () =>{
     return (
         <>
+
+        <div className="image"></div>
          <Navbar></Navbar>
          
         <div className="base-container">

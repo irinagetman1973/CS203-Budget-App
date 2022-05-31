@@ -5,9 +5,28 @@
   align-items: center;
 }
 
+.image {
+  background-image: url(../../public/images/tiles_yellow.png);
+  width: 50%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: stretch;
+  align-content: stretch;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .header {
-    font-size: 24px;
-    font-family: 'Patrick Hand', cursive, sans-serif;
+  font-size: 24px;
+  font-family: 'Patrick Hand', cursive, sans-serif;
+  position: absolute;
+  right: 33%;
+  padding-top: 5%;
 }
 
 .content {
@@ -19,7 +38,7 @@
 
 .form1 {
   position: absolute;
-  right: 25%;
+  right: 25.5%;
   padding-top: 10%;
   padding-left: 75%;
   margin-top: 2em;
