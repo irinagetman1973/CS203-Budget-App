@@ -1,13 +1,13 @@
 .base-container {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 
 .image {
   background-image: url(../../public/images/tiles_yellow.png);
-  width: 50%;
+  width: 55%;
   height: 100%;
   display: block;
   position: fixed;
@@ -22,55 +22,53 @@
 }
 
 .header1 {
-  font-size: 24px;
-  font-family: 'Patrick Hand', cursive, sans-serif;
-  position: relative;
   left: 23%;
   padding-top: 5%;
+  font-size: 24px;
+  position: relative;
+  font-family: 'Patrick Hand', cursive, sans-serif;
 }
 
 .header2 {
-  font-size: 24px;
-  font-family: 'Patrick Hand', cursive, sans-serif;
-  position: relative;
   left: 23%;
   padding-top: 5%;
+  font-size: 24px;
+  position: relative;
+  font-family: 'Patrick Hand', cursive, sans-serif;
 }
 
 .content {
   display: flex;
-  flex-direction: column;
   padding-top: 10%;
   padding-right: 25%;
+  flex-direction: column;
 }
 
 .form1 {
-  position: relative;
+
   right: 13.5%;
-  padding-left: 75%;
-  margin-top: 2em;
   display: flex;
-  flex-direction: column;
+  padding-left: 75%;
+  position: relative;
   align-items: center;
+  flex-direction: column;
 }
 
 .form2 {
-  position: absolute;
-  right: 15%;
-  padding-top: 5%;
-  padding-left: 75%;
-  margin-top: 2em;
+  right: 10%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 20px;
+  padding-left: 75%;
+  position: relative;
   align-items: center;
+  grid-column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .form-group {
   display: flex;
+  width: fit-content;
   flex-direction: column;
   align-items: flex-start;
-  width: fit-content;
 }
 
 label {
@@ -78,22 +76,22 @@ label {
 }
 
 .button {
+  left: 150%;
   position: relative;
-  right: -150%;
 }
 
 input {
+  border: 0;
+  height: 37px;
   margin-top: 6px;
   min-width: 18em;
-  height: 37px;
-  padding: 0px 10px;
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  background-color: #f3f3f3;
-  border: 0;
+  padding: 0px 10px;
   border-radius: 4px;
   margin-bottom: 31px;
+  background-color: #f3f3f3;
   transition: all 250ms ease-in-out;
+  font-family: "Open Sans", sans-serif;
 }
 
 .footer {
