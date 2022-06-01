@@ -35,34 +35,35 @@ export const DashboardPageLayout = ()=> {
                 </div>
             </div>
             <div className="budget-section">
-                <h2>
-                    Choose your tool 
-                    <i className='fa-solid fa-plus' />
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </h2>
-                <div className="budget-items">
-                    <div className="link-expenses">
-                        <h3>
-                            Expenses
-                        </h3>
-                        <div className="budget-box1">
-                        
-                        
+                <div className="budget-section-wrap">
+                    <h2>
+                        Choose your tool 
+                        <i className='fa-solid fa-plus' />
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </h2>
+                    <div className="budget-items">
+                        <div className="link-expenses">
+                            <h3>
+                                Expenses
+                            </h3>
+                            <div className="budget-box">
+                            
+                            
+                            </div>
+
+                        </div>
+                        <div className="link-income">
+                            <h3>
+                                Income
+                            </h3>
+                            <div className="budget-box">
+
+                            </div>
+                            
                         </div>
 
                     </div>
-                    <div className="link-income">
-                        <h3>
-                            Income
-                        </h3>
-                        <div className="budget-box2">
-
-                        </div>
-                        
-                    </div>
-
                 </div>
-
             </div>
         </div>
         

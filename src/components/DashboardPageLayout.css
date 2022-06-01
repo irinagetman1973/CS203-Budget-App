@@ -53,21 +53,28 @@
 }
 
 .budget-section{
-    width: 80%;
-    height: 400px;
+    width: 984px;
+    /* height: 500px; */
     background-color:whitesmoke;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.budget-items{
+    display: flex;
 }
 
 .link-income,
 .link-expenses
 {
     width: 180px;
-    height: 150px;
+    /* height: 150px; */
     background-color:blueviolet;
+    text-align: center;
 }
 
-.budget-box1{
+.budget-box{
     /* width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -78,23 +85,27 @@
     /* display: inline-block; */
     width: 100px;
     height: 100px;
-    /* background: url('/public/images/coins.png'); */
+   
     background-position: 50% 50%;
     background-size: cover;
     border-radius: 50%;
+    background-color: #FFC727;
+    margin: auto;
+}
+
+
+
+.link-expenses > h3,
+.link-income >h3
+{    padding: 10px 10px 20px 10px;
     
 }
-.budget-box2{
-    /* width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-image: url('/public/images/Plant.png')  no-repeat; */
-
-    /* display: inline-block; */
-    width: 100px;
-    height: 100px;
-    /* background: url('/public/images/Plant.png'); */
-    background-position: 50% 50%;
-    background-size: cover;
-    border-radius: 50%;
+.budget-section-wrap{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.budget-section-wrap >h2{
+    padding: 15px ;
 }
