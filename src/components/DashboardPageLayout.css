@@ -1,0 +1,100 @@
+.db-layout{
+    width: 100%;
+    height: 1000px;
+    
+}
+
+.banner--db{
+    background: url('/public/images/tiles_yellow.png') center  no-repeat;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    overflow: visible;
+    margin-bottom: 5rem;
+    padding-bottom: 0;
+    padding-top: 2rem;
+   
+}
+
+.db-box{
+    width: 330px;
+    height: 354px;
+    background-color: #2F80ED;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+
+.db-avatar{
+    width: 140px;
+    height: 140px;
+    background-color:whitesmoke;
+    margin: auto;
+    border-radius: 50%;
+    
+
+}
+
+.banner-content{
+    width: 984px;
+    height: 404px;
+    background-color: #2F80ED;
+    margin-top: 20px;
+    justify-content:space-around;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    padding: 13rem 0 11rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.budget-section{
+    width: 80%;
+    height: 400px;
+    background-color:whitesmoke;
+    margin: auto;
+}
+
+.link-income,
+.link-expenses
+{
+    width: 180px;
+    height: 150px;
+    background-color:blueviolet;
+}
+
+.budget-box1{
+    /* width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* background-image: url('/public/images/coins.png') ; */
+    /* background-color: aliceblue;
+    margin: auto;  */
+
+    /* display: inline-block; */
+    width: 100px;
+    height: 100px;
+    /* background: url('/public/images/coins.png'); */
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%;
+    
+}
+.budget-box2{
+    /* width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url('/public/images/Plant.png')  no-repeat; */
+
+    /* display: inline-block; */
+    width: 100px;
+    height: 100px;
+    /* background: url('/public/images/Plant.png'); */
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%;
+}
