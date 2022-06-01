@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ExpenseList from './components/ExpenseList';
 import AddExpense from './AddExpense';
-import { AppContext, AppProvider } from './context/AppContext';
+import { AppContext, AppProvider } from './AppContext';
 
 const Expenses = () => {
     return (
