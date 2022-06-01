@@ -13,3 +13,5 @@ function Sign_Up() {
   }
   
   export default SignUp
+
+  {/*Brittany*/ }

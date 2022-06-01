@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
-import { Navbar } from './Navbar';
 import Dashboard from '../pages/Dashboard';
 import './Buttons.css';
 
@@ -14,7 +13,6 @@ export const Login = () => {
 
     return (
         <>
-            <Navbar></Navbar>
             {/* Background Image */}
             <div className="image"></div>
             <div className="base-container">

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { TiDelete } from 'react-icons/ti';
-import { AppContext } from '.components/context/AppContext';
+import { AppContext, AppProvider } from './context/AppContext';
 
-const ExpenseItem = (props) => {
+export const ExpenseList = (props) => {
 	const { dispatch } = useContext(AppContext);
 
 	const handleDeleteExpense = () => {
@@ -24,5 +24,3 @@ const ExpenseItem = (props) => {
 		</li>
 	);
 };
-
-export default ExpenseItem;

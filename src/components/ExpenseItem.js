@@ -1,7 +1,7 @@
 import React from 'react';
 import { TiDelete } from 'react-icons/ti';
 
-const ExpenseItem = (props) => {
+export const ExpenseItem = (props) => {
 	return (
 		<li className='list-group-item d-flex justify-content-between align-items-center'>
 			{props.name}
@@ -14,5 +14,3 @@ const ExpenseItem = (props) => {
 		</li>
 	);
 };
-
-export default ExpenseItem;
