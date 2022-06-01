@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { TiDelete } from 'react-icons/ti';
 import { v4 as uuidv4 } from 'uuid';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ExpenseList } from './ExpenseList';
 import { AppContext, AppProvider } from './context/AppContext';
 
 export const Expenses = () => {
