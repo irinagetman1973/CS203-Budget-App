@@ -1,0 +1,83 @@
+.base-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    background-image: url(../../public/images/tiles_yellow.png);
+    width: 55%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: stretch;
+    align-content: stretch;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header1 {
+    left: 23%;
+    padding-top: 5%;
+    font-size: 24px;
+    position: relative;
+    font-family: 'Patrick Hand', cursive, sans-serif;
+}
+
+.content {
+    display: flex;
+    padding-top: 10%;
+    padding-right: 25%;
+    flex-direction: column;
+}
+
+.form1 {
+    right: 13.5%;
+    display: flex;
+    padding-top: 5%;
+    padding-left: 75%;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 20px;
+}
+
+.button {
+    left: 150%;
+    position: relative;
+}
+
+input {
+    border: 0;
+    height: 37px;
+    margin-top: 6px;
+    min-width: 18em;
+    font-size: 16px;
+    padding: 0px 10px;
+    border-radius: 4px;
+    margin-bottom: 31px;
+    background-color: #f3f3f3;
+    transition: all 250ms ease-in-out;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer {
+    margin-top: 3em;
+}
+
+/*Brittany*/
