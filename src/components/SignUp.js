@@ -1,6 +1,5 @@
 import React from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
-import { Navbar } from './Navbar';
 import Dashboard from '../pages/Dashboard';
 import './Buttons.css';
 
@@ -13,7 +12,6 @@ export const SignUp = () => {
 
     return (
         <>
-            <Navbar></Navbar>
             <div className="image"></div>
             <div className="base-container">
                 <div className="header2">CREATE NEW ACCOUNT:</div>
