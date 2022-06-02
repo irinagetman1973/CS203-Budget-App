@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { TiDelete } from 'react-icons/ti';
+
 import { AppContext } from './context/AppContext';
 
 
@@ -20,7 +21,7 @@ export const ExpenseItem = (props) => {
 				<span className='tag tag-primary tag-pill mr-3'>
 					${props.cost}
 				</span>
-				<TiDelete size='1.5em' onClick={ handleDeleteExpense }></TiDelete>
+				<TiDelete size='1.5em' onClick={handleDeleteExpense}></TiDelete>
 			</div>
 		</li>
 	);

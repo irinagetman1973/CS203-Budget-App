@@ -1,7 +1,9 @@
 import React from 'react';
+
 import '../App.css'
 import { SignUp } from '../components/SignUp';
 import { Navbar } from '../components/Navbar';
+
 
 function Sign_Up() {
   return (
@@ -12,6 +14,6 @@ function Sign_Up() {
   )
 }
 
-export default SignUp
+export default Sign_Up
 
 {/*Brittany*/ }

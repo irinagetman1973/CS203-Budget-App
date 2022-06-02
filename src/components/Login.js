@@ -1,8 +1,10 @@
 import React from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Dashboard from '../pages/Dashboard';
+
 import './Buttons.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Dashboard from '../pages/Dashboard';
 
 
 export const Login = () => {
@@ -43,5 +45,6 @@ export const Login = () => {
     )
 }
 
+export default Login
 
 {/*Brittany*/ }

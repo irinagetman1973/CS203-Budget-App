@@ -1,11 +1,16 @@
 import React from "react";
-import './DashboardPageLayout.css'
-import '../App.css';
-import Expenses from '../pages/Expenses';
-import Income from '../pages/Income';
+import { Route, Routes, useNavigate } from 'react-router-dom';
+
 import { library, icon } from '@fortawesome/fontawesome-svg-core'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
-import { Route, Routes, useNavigate } from 'react-router-dom';
+
+
+import '../App.css';
+import './DashboardPageLayout.css'
+
+import Expenses from '../pages/Expenses';
+import Income from '../pages/Income';
+
 
 // library.add(faCamera)
 
@@ -17,7 +22,7 @@ export const DashboardPageLayout = () => {
     const navigateToExpenses = () => {
         navigate('/Expenses');
     };
-    const navigateToIncome = () =>{
+    const navigateToIncome = () => {
         navigate('/Income');
     }
     return (
@@ -47,16 +52,15 @@ export const DashboardPageLayout = () => {
                     <div className="budget-section-wrap">
                         <h2>
                             Choose your tool
-                          
+
                         </h2>
                         <div className="budget-items">
                             <div className="link-expenses">
                                 <h3>
                                     Expenses
                                 </h3>
-                                {/*TEMPORARY*/} 
-                                
-                                {/* <div className="budget-box"> */}
+                                {/*TEMPORARY*/}
+                                <div className="budget-box">
                                     {/* <div className="button">*/}
                                     <button className='sign-btn' onClick={navigateToExpenses}>
                                         Expenses
@@ -65,32 +69,32 @@ export const DashboardPageLayout = () => {
                                         <Route path="/Expenses" element={<Expenses />} />
                                     </Routes>
                                     {/* </div> */}
-                                {/* </div> */}
-                            </div>
-                            <div className="link-income">
+                                    {/* </div> */}
+                                </div>
+                                <div className="link-income">
                                     <h3>
                                         Income
                                     </h3>
                                     {/* <div className="budget-box">
 
                                     </div> */}
-                                       <button className='sign-btn' onClick={navigateToIncome}>
-                                            Income
-                                        </button>
-                                        <Routes>
-                                            <Route path="/Income" element={<Income />} />
-                                        </Routes>
+                                    <button className='sign-btn' onClick={navigateToIncome}>
+                                        Income
+                                    </button>
+                                    <Routes>
+                                        <Route path="/Income" element={<Income />} />
+                                    </Routes>
 
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-            
-                
-                        
-        </div>                 
-     </>
- )
-};
+            </div>
+
+        </>
+    )
+}
+
+export default DashboardPageLayout
 
