@@ -54,14 +54,14 @@ export const DashboardPageLayout = () => {
                                 {/*TEMPORARY*/} 
                                 
                                 <div className="budget-box">
-                                    <div className="button">
+                                    {/* <div className="button">*/}
                                         <button className='sign-btn' onClick={navigateToExpenses}>
                                             Expenses
                                         </button>
                                         <Routes>
                                             <Route path="/Expenses" element={<Expenses />} />
                                         </Routes>
-                                    </div>
+                                    {/* </div> */}
 
                                 </div>
 

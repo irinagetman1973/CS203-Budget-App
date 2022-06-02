@@ -21,11 +21,7 @@ const AppReducer = (state, action) => {
 
 const initialState = {
 	budget: 2000,
-	expenses: [
-		{ id: 12, name: 'Shopping', cost: 40 },
-		{ id: 13, name: 'Holiday', cost: 400 },
-		{ id: 14, name: 'Car service', cost: 50 },
-	],
+	expenses: [],
 }
 
 export const AppContext = createContext();
@@ -47,3 +43,5 @@ export const AppProvider = (props) => {
 };
 
 export default AppContext
+
+{/*Brittany */ }
