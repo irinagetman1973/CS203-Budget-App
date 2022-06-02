@@ -11,8 +11,6 @@ body {
     background-color: #2F80ED;
 }
 
-
-
 .Budget-logo{
     font-family: Chopin Script,Inter,sans-serif;
     font-size: 40px;
@@ -29,8 +27,11 @@ body {
     margin-top: 0%;
 }
 
+.navbar {
+    padding: 12px;
+}
+
 .navbar-container{
-  width: 100%;
-   height: 100px;
-   margin-top: 20px;
+   width: 140px;
+   height: 60px;
 }
