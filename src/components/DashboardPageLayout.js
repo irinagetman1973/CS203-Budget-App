@@ -1,16 +1,21 @@
 import React from "react";
 import './DashboardPageLayout.css'
 import '../App.css';
+import Expenses from '../pages/Expenses';
 import { library, icon } from '@fortawesome/fontawesome-svg-core'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
+import { Route, Routes, useNavigate } from 'react-router-dom';
 
 // library.add(faCamera)
 
 // const camera = icon({ prefix: 'fas', iconName: 'camera' })
 
-
-
 export const DashboardPageLayout = () => {
+    const navigate = useNavigate();
+
+    const navigateToExpenses = () => {
+        navigate('/Expenses');
+    };
     return (
         <>
             <div className="db-layout">
@@ -46,8 +51,17 @@ export const DashboardPageLayout = () => {
                                 <h3>
                                     Expenses
                                 </h3>
+                                {/*TEMPORARY*/} 
+                                
                                 <div className="budget-box">
-
+                                    <div className="button">
+                                        <button className='sign-btn' onClick={navigateToExpenses}>
+                                            Expenses
+                                        </button>
+                                        <Routes>
+                                            <Route path="/Expenses" element={<Expenses />} />
+                                        </Routes>
+                                    </div>
 
                                 </div>
 
