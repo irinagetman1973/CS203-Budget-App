@@ -65,6 +65,29 @@ export const DashboardPageLayout = () => {
 
                                 </div>
 
+                        <p>
+                            Here is your own space
+                        </p>
+                        <button className="editProfile-btn">
+                            Edit profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div className="budget-section">
+                <div className="budget-section-wrap">
+                    <h2>
+                        Choose your tool 
+           
+                    </h2>
+                    <div className="budget-items">
+                        <div className="link-expenses">
+                            <h3>
+                                Expenses
+                            </h3>
+                            <div className="budget-box">
+                            
+                            
                             </div>
                             <div className="link-income">
                                 <h3>
