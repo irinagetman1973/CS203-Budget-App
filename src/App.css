@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Patrick Hand', cursive, sans-serif;
-  }
+}
 
 
 body {
@@ -11,18 +11,18 @@ body {
     background-color: #2F80ED;
 }
 
-.Budget-logo{
-    font-family: Chopin Script,Inter,sans-serif;
+.Budget-logo {
+    font-family: Chopin Script, Inter, sans-serif;
     font-size: 40px;
-    color:#263238;
+    color: #263238;
     padding-left: 40px;
     margin-bottom: 0%;
 }
 
-.App-logo{
+.App-logo {
     font-family: Montserrat;
     font-size: 20px;
-    color:#263238 ;
+    color: #263238;
     font-weight: bold;
     margin-top: 0%;
 }
@@ -31,7 +31,7 @@ body {
     padding: 12px;
 }
 
-.navbar-container{
-   width: 140px;
-   height: 60px;
+.navbar-container {
+    width: 140px;
+    height: 60px;
 }

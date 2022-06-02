@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Hero }  from '../components/Hero';
-import { Navbar} from '../components/Navbar';
-import { Buttons} from '../components/Buttons';
+import { Hero } from '../components/Hero';
+import { Navbar } from '../components/Navbar';
+import { Buttons } from '../components/Buttons';
 
 
 
