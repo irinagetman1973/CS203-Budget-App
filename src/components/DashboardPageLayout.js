@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes, useNavigate } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import { library, icon } from '@fortawesome/fontawesome-svg-core'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
@@ -50,42 +51,22 @@ export const DashboardPageLayout = () => {
                 </div>
                 <div className="budget-section">
                     <div className="budget-section-wrap">
-                        <h2>
-                            Choose your tool
-
-                        </h2>
-                        <div className="budget-items">
-                            <div className="link-expenses">
-                                <h3>
+                        <h2 className='mt-3'>Choose your tool</h2>
+                        <div className='row mt-3'>
+                            <div className='col=sm'>
+                                <button className='sign-btn col-sm' onClick={navigateToExpenses}>
                                     Expenses
-                                </h3>
-                                {/*TEMPORARY*/}
-                                <div className="budget-box">
-                                    {/* <div className="button">*/}
-                                    <button className='sign-btn' onClick={navigateToExpenses}>
-                                        Expenses
-                                    </button>
-                                    <Routes>
-                                        <Route path="/Expenses" element={<Expenses />} />
-                                    </Routes>
-                                    {/* </div> */}
-                                    {/* </div> */}
-                                </div>
-                                <div className="link-income">
-                                    <h3>
-                                        Income
-                                    </h3>
-                                    {/* <div className="budget-box">
-
-                                    </div> */}
-                                    <button className='sign-btn' onClick={navigateToIncome}>
-                                        Income
-                                    </button>
-                                    <Routes>
-                                        <Route path="/Income" element={<Income />} />
-                                    </Routes>
-
-                                </div>
+                                </button>
+                                <Routes>
+                                    <Route path="/Expenses" element={<Expenses />} />
+                                </Routes>
+                            
+                            <button className='sign-btn col-sm' onClick={navigateToIncome}>
+                                Income
+                            </button>
+                            <Routes>
+                                <Route path="/Income" element={<Income />} />
+                            </Routes>
                             </div>
                         </div>
                     </div>
