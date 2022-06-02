@@ -1,23 +1,19 @@
 import React, { useContext } from 'react';
 import { TiDelete } from 'react-icons/ti';
-import { AppContext, AppProvider } from './context/AppContext';
 import ExpenseItem from './ExpenseItem';
+import { AppContext } from '../components/context/AppContext';
+
 
 export const ExpenseList = () => {
-	const expenses = [
-		{ id: 123123, name: "Everyday", cost: 50 },
-		{ id: 123123, name: "Living", cost: 40 },
-		{ id: 123123, name: "Regular", cost: 70 },
-		{ id: 123123, name: "Personal", cost: 20 }
-	]
+	const { expenses } = useContext(AppContext)
 
 	return (
 		<ul className='List-group'>
-			{expenses.map(((expenses)=>(
-				<ExpenseItem 
-				id={expenses.id} 
-				name={expenses.name} 
-				cost={expenses.cost}/>
+			{expenses.map(((expenses) => (
+				<ExpenseItem
+					id={expenses.id}
+					name={expenses.name}
+					cost={expenses.cost} />
 			)))}
 		</ul>
 	)
