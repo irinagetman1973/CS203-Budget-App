@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import AppContext from "./context/AppContext";
 
 import { library, icon } from '@fortawesome/fontawesome-svg-core'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
@@ -52,6 +51,8 @@ export const DashboardPageLayout = () => {
                             <p>
                                 Here is your own space
                             </p>
+
+                            {/*Brittany */}
                             <button className="editProfile-btn" onClick={handleClick}>
                                 Edit profile
                             </button>
@@ -60,11 +61,9 @@ export const DashboardPageLayout = () => {
                                     <EditProfile />
                                 </div>
                             )}
-                            {/* {isShown && <DashboardPageLayout />} */}
                         </div>
                     </div>
                 </div>
-                {/*Brittany */}
                 <div className="budget-section">
                     <div className="budget-section-wrap">
                         <h2 className='mt-3'>Choose your tool</h2>

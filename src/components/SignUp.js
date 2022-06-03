@@ -40,6 +40,10 @@ export const SignUp = () => {
                         <label htmlFor="password">Password:</label>
                         <input type="password" name="password" placeholder="password" />
                     </div>
+                    <div className="form-group">
+                        <label htmlFor="password">Confirm Password:</label>
+                        <input type="password" name="password" placeholder="password" />
+                    </div>
                 </div>
                 <div className="footer">
                     <div className="button">
