@@ -11,6 +11,7 @@ import './DashboardPageLayout.css'
 
 import Expenses from '../pages/Expenses';
 import Income from '../pages/Income';
+import EditProfile from "./EditProfile";
 
 
 // library.add(faCamera)
@@ -22,9 +23,12 @@ export const DashboardPageLayout = () => {
 
     const navigateToExpenses = () => {
         navigate('/Expenses');
-    };
+    }
     const navigateToIncome = () => {
         navigate('/Income');
+    }
+    const navigateToEditProfile = () => {
+        navigate('/EditProfile');
     }
     return (
         <>
@@ -43,9 +47,12 @@ export const DashboardPageLayout = () => {
                             <p>
                                 Here is your own space
                             </p>
-                            <button className="editProfile-btn">
+                            <button className="editProfile-btn" onClick={navigateToEditProfile}>
                                 Edit profile
                             </button>
+                            <Routes>
+                                <Route path="/EditProfile" element={< EditProfile />} />
+                            </Routes>
                         </div>
                     </div>
                 </div>
