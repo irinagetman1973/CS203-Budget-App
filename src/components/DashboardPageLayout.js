@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { library, icon } from '@fortawesome/fontawesome-svg-core'
-import { faCamera } from '@fortawesome/free-solid-svg-icons'
+
+import { HiPlus,HiMinus } from 'react-icons/hi'
 
 
 import '../App.css';
@@ -70,13 +70,13 @@ export const DashboardPageLayout = () => {
                         <div className='row mt-3'>
                             <div className='col=sm'>
                                 <button className='sign-btn col-sm' onClick={navigateToExpenses}>
-                                    Expenses
+                                    Expenses <HiMinus />
                                 </button>
                                 <Routes>
                                     <Route path="/Expenses" element={<Expenses />} />
                                 </Routes>
                                 <button className='sign-btn col-sm' onClick={navigateToIncome}>
-                                    Income
+                                    Income <HiPlus/>
                                 </button>
                                 <Routes>
                                     <Route path="/Income" element={<Income />} />
