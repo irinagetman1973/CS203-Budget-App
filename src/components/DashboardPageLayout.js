@@ -49,6 +49,7 @@ export const DashboardPageLayout = () => {
                         </div>
                     </div>
                 </div>
+                {/*Brittany */ }
                 <div className="budget-section">
                     <div className="budget-section-wrap">
                         <h2 className='mt-3'>Choose your tool</h2>
@@ -60,17 +61,17 @@ export const DashboardPageLayout = () => {
                                 <Routes>
                                     <Route path="/Expenses" element={<Expenses />} />
                                 </Routes>
-                            
-                            <button className='sign-btn col-sm' onClick={navigateToIncome}>
-                                Income
-                            </button>
-                            <Routes>
-                                <Route path="/Income" element={<Income />} />
-                            </Routes>
+                                <button className='sign-btn col-sm' onClick={navigateToIncome}>
+                                    Income
+                                </button>
+                                <Routes>
+                                    <Route path="/Income" element={<Income />} />
+                                </Routes>
                             </div>
                         </div>
                     </div>
                 </div>
+                {/*Brittany */ }
             </div>
 
         </>
