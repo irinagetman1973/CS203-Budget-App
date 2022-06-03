@@ -21,6 +21,11 @@ Open [http://localhost:3000]
 
 -Brittany-
 
+Please also run 
+npm i bootstrap
+npm i uuid
+npm i react-icons
+
 ## Available Scripts
 
 In the project directory, you can run:
