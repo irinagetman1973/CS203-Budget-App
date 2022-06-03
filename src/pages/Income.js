@@ -5,11 +5,13 @@ import { Navbar } from '../components/Navbar';
 import { BudgetMock} from '../components/BudgetMock'
 import IncomeList from '../components/IncomeList';
 import AddIncomeForm from '../components/AddIncomeForm';
+import { AppProvider1 } from '../components/context/AppContext1';
 
 const Income = () => {
   return (
     <>
         <Navbar />
+        <AppProvider1>
         <div className='container'>
             <h1 className='mt-3'>Your Income</h1>
             <div className='row mt-3'>
@@ -36,7 +38,7 @@ const Income = () => {
             </div>
 
         </div>
-		
+		</AppProvider1>
     </>
   )
 }
