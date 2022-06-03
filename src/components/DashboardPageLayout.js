@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import AppContext from "./context/AppContext";
 
 import { library, icon } from '@fortawesome/fontawesome-svg-core'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
@@ -27,9 +28,13 @@ export const DashboardPageLayout = () => {
     const navigateToIncome = () => {
         navigate('/Income');
     }
-    const navigateToEditProfile = () => {
-        navigate('/EditProfile');
+
+    const [isShown, setIsShown] = useState(false)
+
+    const handleClick = event => {
+        setIsShown(true)
     }
+
     return (
         <>
             <div className="db-layout">
@@ -47,16 +52,19 @@ export const DashboardPageLayout = () => {
                             <p>
                                 Here is your own space
                             </p>
-                            <button className="editProfile-btn" onClick={navigateToEditProfile}>
+                            <button className="editProfile-btn" onClick={handleClick}>
                                 Edit profile
                             </button>
-                            <Routes>
-                                <Route path="/EditProfile" element={< EditProfile />} />
-                            </Routes>
+                            {isShown && (
+                                <div>
+                                    <EditProfile />
+                                </div>
+                            )}
+                            {/* {isShown && <DashboardPageLayout />} */}
                         </div>
                     </div>
                 </div>
-                {/*Brittany */ }
+                {/*Brittany */}
                 <div className="budget-section">
                     <div className="budget-section-wrap">
                         <h2 className='mt-3'>Choose your tool</h2>
@@ -78,7 +86,7 @@ export const DashboardPageLayout = () => {
                         </div>
                     </div>
                 </div>
-                {/*Brittany */ }
+                {/*Brittany */}
             </div>
 
         </>
