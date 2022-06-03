@@ -19,7 +19,12 @@ const AppReducer = (state, action) => {
 			return {
 				...state,
 				budget: action.payload,
-			};
+			}
+		case 'SET_PROFILE':
+			return {
+				...state,
+				profile: action.payload,
+			}
 		default:
 			return state;
 	}

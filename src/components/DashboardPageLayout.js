@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -11,6 +11,7 @@ import './DashboardPageLayout.css'
 
 import Expenses from '../pages/Expenses';
 import Income from '../pages/Income';
+import EditProfile from "./EditProfile";
 
 
 // library.add(faCamera)
@@ -22,10 +23,17 @@ export const DashboardPageLayout = () => {
 
     const navigateToExpenses = () => {
         navigate('/Expenses');
-    };
+    }
     const navigateToIncome = () => {
         navigate('/Income');
     }
+
+    const [isShown, setIsShown] = useState(false)
+
+    const handleClick = event => {
+        setIsShown(true)
+    }
+
     return (
         <>
             <div className="db-layout">
@@ -43,13 +51,19 @@ export const DashboardPageLayout = () => {
                             <p>
                                 Here is your own space
                             </p>
-                            <button className="editProfile-btn">
+
+                            {/*Brittany */}
+                            <button className="editProfile-btn" onClick={handleClick}>
                                 Edit profile
                             </button>
+                            {isShown && (
+                                <div>
+                                    <EditProfile />
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
-                {/*Brittany */ }
                 <div className="budget-section">
                     <div className="budget-section-wrap">
                         <h2 className='mt-3'>Choose your tool</h2>
@@ -71,7 +85,7 @@ export const DashboardPageLayout = () => {
                         </div>
                     </div>
                 </div>
-                {/*Brittany */ }
+                {/*Brittany */}
             </div>
 
         </>
