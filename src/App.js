@@ -33,21 +33,3 @@ function App() {
 
 }
 export default App;
-//27/05 comment:
-//I am planning to make App.js as combination of different pages
-// so will move all the JSX elements to the assigned  pages
-// below an example from stackOverflow
-
-//   import React from "react";
-//import ReactDOM from "react-dom";
-// import { BrowserRouter, Route, Switch } from "react-router-dom";
-// const rootElement = document.getElementById("root");
-//  ReactDOM.render(
-//    <BrowserRouter>
-//     <Switch>
-//      <Route exact path="/" element={Page1} />
-//      <Route path="/page2" element={Page2} />
-//    </Switch>
-//    </BrowserRouter>,
-//    rootElement
-//  );
