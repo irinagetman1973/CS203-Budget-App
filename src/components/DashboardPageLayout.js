@@ -14,9 +14,6 @@ import Income from '../pages/Income';
 import EditProfile from "./EditProfile";
 
 
-// library.add(faCamera)
-
-// const camera = icon({ prefix: 'fas', iconName: 'camera' })
 
 export const DashboardPageLayout = () => {
     const navigate = useNavigate();
@@ -52,9 +49,9 @@ export const DashboardPageLayout = () => {
                                 Here is your own space
                             </p>
 
-                            {/*Brittany */}
-                            <button className="editProfile-btn" onClick={handleClick}>
-                                Edit profile
+                            
+                            <button className="btn-warning btn-lg" onClick={handleClick}>
+                                Edit profile 
                             </button>
                             {isShown && (
                                 <div>
@@ -69,13 +66,13 @@ export const DashboardPageLayout = () => {
                         <h2 className='mt-3'>Choose your tool</h2>
                         <div className='row mt-3'>
                             <div className='col=sm'>
-                                <button className='sign-btn col-sm' onClick={navigateToExpenses}>
+                                <button className='btn-warning btn-lg col-sm' onClick={navigateToExpenses}>
                                     Expenses <HiMinus />
                                 </button>
                                 <Routes>
                                     <Route path="/Expenses" element={<Expenses />} />
                                 </Routes>
-                                <button className='sign-btn col-sm' onClick={navigateToIncome}>
+                                <button className='btn-warning btn-lg col-sm' onClick={navigateToIncome}>
                                     Income <HiPlus/>
                                 </button>
                                 <Routes>
@@ -85,7 +82,7 @@ export const DashboardPageLayout = () => {
                         </div>
                     </div>
                 </div>
-                {/*Brittany */}
+               
             </div>
 
         </>

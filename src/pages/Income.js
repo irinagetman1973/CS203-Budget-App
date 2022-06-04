@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import '../App.css'
+// import '../App.css'
 import { Navbar } from '../components/Navbar';
 import { BudgetMock} from '../components/BudgetMock'
 import IncomeList from '../components/IncomeList';
