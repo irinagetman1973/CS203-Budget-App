@@ -50,12 +50,15 @@ export const AddIncomeForm = () => {
                         value={amount}
                         onChange = {(event)=> setAmount(event.target.value)}
                     ></input>
-                <div className='col-sm'>
-                    <button
-                        type='submit'
-                        className=' btn-warning btn-lg'>Save</button>
-
                 </div>
+                <div className='row mt-2'>
+                    <div className='col-sm'>
+                        <button
+                            type='submit'
+                            className=' btn-warning btn-lg'>Save
+                            </button>
+
+                    </div>
                 </div>
                 
             </div>

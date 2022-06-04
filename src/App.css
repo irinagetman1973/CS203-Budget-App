@@ -34,5 +34,8 @@ body {
 .navbar-container {
     width: 140px;
     height: 60px;
+}   
+.footer{
+    align-items: center;
 }
 /* irina */

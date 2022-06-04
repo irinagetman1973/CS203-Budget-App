@@ -57,10 +57,10 @@ label {
     font-size: 20px;
 }
 
-.button {
+/* .button {
     left: 150%;
     position: relative;
-}
+} */
 
 input {
     border: 0;
@@ -78,6 +78,8 @@ input {
 
 .footer {
     margin-top: 3em;
+    align-items: center;
+    margin-left: 500px;
 }
 
 /*Brittany*/

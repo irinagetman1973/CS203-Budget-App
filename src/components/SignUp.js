@@ -44,8 +44,6 @@ export const SignUp = () => {
                         <label htmlFor="password">Confirm Password:</label>
                         <input type="password" name="password" placeholder="password" />
                     </div>
-                </div>
-                <div className="footer">
                     <div className="button">
                         <button className='btn-warning btn-lg' onClick={navigateToDashboard}>
                             Sign Up
@@ -54,6 +52,9 @@ export const SignUp = () => {
                             <Route path="/Dashboard" element={<Dashboard />} />
                         </Routes>
                     </div>
+                </div>
+                <div className="footer">
+                    
                 </div>
             </div>
         </>

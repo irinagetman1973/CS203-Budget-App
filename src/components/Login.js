@@ -32,7 +32,7 @@ export const Login = () => {
                 </div>
                 <div className="footer">
                     <div className="button">
-                        <button className='login-btn' onClick={navigateToDashboard}>
+                        <button className='btn-warning btn-lg' onClick={navigateToDashboard}>
                             Log in
                         </button>
                         <Routes>
