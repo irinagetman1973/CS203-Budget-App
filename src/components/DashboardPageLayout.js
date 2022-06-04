@@ -66,13 +66,13 @@ export const DashboardPageLayout = () => {
                         <h2 className='mt-3'>Choose your tool</h2>
                         <div className='row mt-3'>
                             <div className='col=sm'>
-                                <button className='btn-warning btn-lg col-sm' onClick={navigateToExpenses}>
+                                <button className=' btn-warning btn-lg col-sm' onClick={navigateToExpenses}>
                                     Expenses <HiMinus />
                                 </button>
                                 <Routes>
                                     <Route path="/Expenses" element={<Expenses />} />
                                 </Routes>
-                                <button className='btn-warning btn-lg col-sm' onClick={navigateToIncome}>
+                                <button className=' btn-warning btn-lg col-sm' onClick={navigateToIncome}>
                                     Income <HiPlus/>
                                 </button>
                                 <Routes>

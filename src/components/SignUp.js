@@ -47,7 +47,7 @@ export const SignUp = () => {
                 </div>
                 <div className="footer">
                     <div className="button">
-                        <button className='sign-btn' onClick={navigateToDashboard}>
+                        <button className='btn-warning btn-lg' onClick={navigateToDashboard}>
                             Sign Up
                         </button>
                         <Routes>

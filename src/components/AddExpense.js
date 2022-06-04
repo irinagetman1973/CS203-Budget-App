@@ -55,7 +55,7 @@ export const AddExpense = () => {
                 </div>
                 <div className='row mt-2'>
                     <div className='col-sm'>
-                        <button type='submit' className='sign-btn'>
+                        <button type='submit' className='btn-warning btn-lg'>
                             Save
                         </button>
                     </div>

@@ -13,7 +13,7 @@ export const Buttons = ({
       <div className='btn-wrap'>
         <Link to='/log-in'>
           <button
-            className='login-btn'
+            className='btn-warning btn-lg'
             onClick={onClick}
             type={type}>
             Log in
@@ -21,7 +21,7 @@ export const Buttons = ({
         </Link>
         <Link to='/sign-up'>
           <button
-            className='sign-btn'
+            className='btn-warning btn-lg'
             onClick={onClick}
             type={type}>
             Sign up
