@@ -18,4 +18,4 @@ export default Income_
 
 //Irina
 
-{/*Fixed by Brittany*/}
+{/*Fixed by Brittany*/ }
