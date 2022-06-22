@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\irina\CS203-Budget-App\flask-server\venv"
+VIRTUAL_ENV="C:\Users\GGPC\Documents\GitHub\CS203-Budget-App\flask-server\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -1,5 +1,5 @@
 from enum import unique
-from Flask import Flask 
+from flask import Flask 
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -13,3 +13,4 @@ class User(db.Model):
 
     def __repr__(self) -> str:
         return '<User %r>' % self.username
+
