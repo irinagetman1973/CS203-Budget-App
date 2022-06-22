@@ -48,8 +48,7 @@ export const DashboardPageLayout = () => {
                             <p>
                                 Here is your own space
                             </p>
-
-                            
+                            {/*Brittany*/ }
                             <button className="btn-warning btn-lg" onClick={handleClick}>
                                 Edit profile 
                             </button>
@@ -82,7 +81,7 @@ export const DashboardPageLayout = () => {
                         </div>
                     </div>
                 </div>
-               
+               {/*Brittany*/}
             </div>
 
         </>
@@ -91,3 +90,4 @@ export const DashboardPageLayout = () => {
 
 export default DashboardPageLayout
 
+//Irina

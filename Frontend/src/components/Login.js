@@ -19,7 +19,9 @@ export const Login = () => {
             {/* Background Image */}
             <div className="image"></div>
             <div className="base-container">
+                {/*Title*/}
                 <div className="header1">LOG IN:</div>
+                {/*Log in form start*/}
                 <div className="form1">
                     <div className="form-group">
                         <label htmlFor="username">Username:</label>

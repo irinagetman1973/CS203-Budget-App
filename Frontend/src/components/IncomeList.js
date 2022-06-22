@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import IncomeItem from './IncomeItem'
 import { AppContext1 } from './context/AppContext1'
 
-const IncomeList = () =>{
+const IncomeListDisplay = () =>{
   const income = [
       {id:123, source: "Salary", amount : 500},
       {id:123, source: "Dividends", amount : 50},
@@ -24,5 +24,5 @@ const IncomeList = () =>{
   )
 }
 
-export default IncomeList
+export default IncomeListDisplay
 // Irina

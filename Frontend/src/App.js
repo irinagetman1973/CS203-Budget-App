@@ -14,7 +14,7 @@ import Dashboard from '../src/pages/Dashboard'
 import Expenses from '../src/pages/Expenses'
 import Income from '../src/pages/Income'
 
-
+//Navigation
 function App() {
   return (
     <>
