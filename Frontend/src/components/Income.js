@@ -1,22 +1,21 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { Navbar } from '../components/Navbar';
-import { BudgetMock } from '../components/BudgetMock'
+
 import IncomeList from '../components/IncomeList';
 import AddIncomeForm from '../components/AddIncomeForm';
-import { AppProvider1 } from '../components/context/AppContext1';
+import { AppProvider } from '../components/context/AppContext';
 
 export const Income = () => {
     return (
         <>
-            <AppProvider1>
+            <AppProvider>
                 <div className='container'>
                     {/*  */}
                     <h1 className='mt-3'>Your Income</h1>
                     <div className='row mt-3'>
                         <div className='col-sm'>
-                            <BudgetMock />
+                            {/* <Budget /> */}
                         </div>
                     </div>
                     <h3 className='mt-3'>
@@ -38,7 +37,7 @@ export const Income = () => {
                     </div>
 
                 </div>
-            </AppProvider1>
+            </AppProvider>
         </>
     )
 }
@@ -47,4 +46,3 @@ export default Income
 
 //irina
 
-{/*Fixed by Brittany*/ }

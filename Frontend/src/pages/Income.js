@@ -14,7 +14,7 @@ function Income_() {
     )
 }
 
-export default Income_
+export default Income
 
 //Irina
 

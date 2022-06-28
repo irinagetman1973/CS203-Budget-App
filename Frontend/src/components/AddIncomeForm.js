@@ -1,10 +1,10 @@
 import React, { useState, useContext } from 'react'
-import { AppContext1 } from './context/AppContext1'
+import { AppContext } from './context/AppContext'
 import { v4 as uuidv4 } from 'uuid'
 import { type } from '@testing-library/user-event/dist/type'
 
 export const AddIncomeForm = () => {
-    const { dispatch } = useContext(AppContext1)
+    const { dispatch } = useContext(AppContext)
     const [source, setSource] = useState('')
     const [amount, setAmount] = useState('')
     const onSubmit = (event) =>{

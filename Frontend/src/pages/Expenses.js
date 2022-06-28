@@ -14,6 +14,6 @@ function Expenses_() {
     )
 }
 
-export default Expenses_
+export default Expenses
 
 {/*Brittany*/ }

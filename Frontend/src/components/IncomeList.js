@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import IncomeItem from './IncomeItem'
-import { AppContext1 } from './context/AppContext1'
+import { AppContext } from './context/AppContext'
 
 const IncomeListDisplay = () =>{
   const income = [

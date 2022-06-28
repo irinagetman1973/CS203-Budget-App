@@ -32,3 +32,4 @@ export const resetCategories = () => {
   expenseCategories.forEach((c) => c.amount = 0);
 };
 
+//  {Irina}
