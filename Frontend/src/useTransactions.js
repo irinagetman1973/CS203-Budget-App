@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { ExpenseTrackerContext } from './context/AppContext1';
+import { ExpenseTrackerContext } from './components/context/context';
 
 import { incomeCategories, expenseCategories, resetCategories } from './constants/categories';
 

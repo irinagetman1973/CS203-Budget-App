@@ -10,7 +10,7 @@ export const Income = () => {
     return (
         <>
             <AppProvider>
-                <div className='container'>
+                <div className='container-fluid'>
                     {/*  */}
                     <h1 className='mt-3'>Your Income</h1>
                     <div className='row mt-3'>

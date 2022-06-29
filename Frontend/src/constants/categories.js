@@ -4,7 +4,7 @@ const expenseColors = ['#CE0058', '#704C99', '#F4BE37', '#CADC3C', '#20D4AF', '#
 export const incomeCategories = [
   { type: 'Business', amount: 0, color: incomeColors[0] },
   { type: 'Investments', amount: 0, color: incomeColors[1] },
-  { type: 'Extra income', amount: 0, color: incomeColors[2] },
+  { type: 'Side Hustle', amount: 0, color: incomeColors[2] },
   { type: 'Deposits', amount: 0, color: incomeColors[3] },
   { type: 'Lottery', amount: 0, color: incomeColors[4] },
   { type: 'Gifts', amount: 0, color: incomeColors[5] },
