@@ -1,4 +1,4 @@
-{/*import React from "react";
+import React from "react";
 
 import { Formik } from "formik";
 import * as EmailValidator from "email-validator";
@@ -56,4 +56,4 @@ export const ValidatedLoginForm = () => (
     </Formik>
 );
 
-    export default ValidatedLoginForm;*/}
+export default ValidatedLoginForm;
