@@ -1,5 +1,5 @@
 import { createContext, useReducer } from "react";
-
+import React from "react";
 
 const AppReducer = (state, action) => {
 	switch (action.type) {
@@ -7,7 +7,6 @@ const AppReducer = (state, action) => {
 			return {
 				...state,
 				expenses: [...state.expenses, action.payload],
-
 			}
 		case 'DELETE_EXPENSE':
 			return {

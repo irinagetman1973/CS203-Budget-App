@@ -18,9 +18,6 @@ export const Income = () => {
         <>
             <Navbar />
             <ExpenseTracker />
-       
-
-      
         </>
     )
 }
