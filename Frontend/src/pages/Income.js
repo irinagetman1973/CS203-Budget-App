@@ -2,49 +2,20 @@ import React from 'react';
 
 import '../App.css'
 import { Navbar } from '../components/Navbar';
+import { Income } from '../components/Income';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
-import IncomeList from '../components/IncomeList';
-import AddIncomeForm from '../components/AddIncomeForm';
-import { AppProvider } from '../components/context/AppContext';
-
-export const Income = () => {
+export const Income_ = () => {
     return (
         <>
             <Navbar />
-            <AppProvider>
-                    <div className='container'>
-                        {/*  */}
-                        <h1 className='mt-3'>Your Income</h1>
-                        <div className='row mt-3'>
-                            <div className='col-sm'>
-                                {/* <Budget /> */}
-                            </div>
-                        </div>
-                        <h3 className='mt-3'>
-                            Income
-                        </h3>
-                        <div className='row mt-3'>
-                            <div className='col-sm'>
-                                <IncomeList />
-                            </div>
-                        </div >
-                        <h3 className='mt-3'>
-                            Add Income
-                        </h3>
-                        <div className='row mt-3'>
-                            <div className='col-sm'>
-                                <AddIncomeForm />
-                            </div>
-
-                        </div>
-
-                    </div>
-            </AppProvider>
+            <Income />
         </>
     )
 }
 
-export default Income
+export default Income_
+
+{/*Brittany */ }

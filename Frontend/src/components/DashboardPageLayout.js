@@ -3,7 +3,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
-import { HiPlus,HiMinus } from 'react-icons/hi'
+import { HiPlus, HiMinus } from 'react-icons/hi'
 
 
 import '../App.css';
@@ -12,7 +12,6 @@ import './DashboardPageLayout.css'
 import Expenses from '../pages/Expenses';
 import Income from '../pages/Income';
 import EditProfile from "./EditProfile";
-
 
 
 export const DashboardPageLayout = () => {
@@ -31,6 +30,9 @@ export const DashboardPageLayout = () => {
         setIsShown(true)
     }
 
+    var fname = sessionStorage.getItem("fName");
+    console.log(fname);
+
     return (
         <>
             <div className="db-layout">
@@ -38,19 +40,15 @@ export const DashboardPageLayout = () => {
                     <div className="banner-content">
                         <div className="db-box">
                             <div className="db-avatar">
-
                             </div>
                         </div>
                         <div className="greeting">
-                            <h2>
-                                Hi,Vanda
-                            </h2>
-                            <p>
-                                Here is your own space
-                            </p>
-                            {/*Brittany*/ }
+                            <h1>
+                                Hi
+                            </h1>
+                            <p>Here is your own space</p>
                             <button className="btn-warning btn-lg" onClick={handleClick}>
-                                Edit profile 
+                                Edit profile
                             </button>
                             {isShown && (
                                 <div>
@@ -72,7 +70,7 @@ export const DashboardPageLayout = () => {
                                     <Route path="/Expenses" element={<Expenses />} />
                                 </Routes>
                                 <button className=' btn-warning btn-lg col-sm' onClick={navigateToIncome}>
-                                    Income <HiPlus/>
+                                    Income <HiPlus />
                                 </button>
                                 <Routes>
                                     <Route path="/Income" element={<Income />} />
@@ -81,7 +79,7 @@ export const DashboardPageLayout = () => {
                         </div>
                     </div>
                 </div>
-               {/*Brittany*/}
+
             </div>
 
         </>
@@ -91,3 +89,5 @@ export const DashboardPageLayout = () => {
 export default DashboardPageLayout
 
 //Irina
+
+{/*Brittany*/}
