@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../App.css'
 import { Navbar } from '../components/Navbar';
-//import {Doughnut} from 'react-chartjs-2';
+import {Doughnut} from 'react-chartjs-2';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import useTransactions from '../useTransactions';
 import IncomeList from '../components/IncomeList';
