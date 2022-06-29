@@ -5,10 +5,10 @@ import { Navbar } from '../components/Navbar';
 import {Doughnut} from 'react-chartjs-2';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import useTransactions from '../useTransactions';
-
 import IncomeList from '../components/IncomeList';
 import AddIncomeForm from '../components/AddIncomeForm';
 import { AppProvider } from '../components/context/AppContext';
+
 
 export const Income = () => {
     return (
@@ -52,3 +52,4 @@ export const Income = () => {
 }
 
 export default Income
+

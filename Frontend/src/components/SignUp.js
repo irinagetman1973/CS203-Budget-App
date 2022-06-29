@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Dashboard from '../pages/Dashboard';
 
-
 export const SignUp = () => {
     const navigate = useNavigate();
 
