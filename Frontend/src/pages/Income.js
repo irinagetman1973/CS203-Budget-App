@@ -17,38 +17,7 @@ export const Income = () => {
     return (
         <>
             <Navbar />
-        
-                    <div className='container'>
-                        {/*  */}
-                        <h1 className='mt-3'>Your Income</h1>
-                        <div className='row mt-3'>
-                            <div className='col-sm'>
-                                {/* <Budget /> */}
-                            </div>
-                        </div>
-                        <h3 className='mt-3'>
-                            {/* Income balance ${balance} */}
-                        </h3>
-                        <div className='row row-n-gutters mt-3'>
-                            <div className='col-sm-8'>
-                                <List />
-                            </div>
-                            <div className='col-sm-4'>
-                                {/* <Doughnut data={chartData} /> */}
-                                here is going to be a doughnut
-                            </div>
-                        </div >
-                        <h3 className='mt-3'>
-                            Add Income
-                        </h3>
-                        <div className='row mt-3'>
-                            <div className='col-sm'>
-                                {/* <AddIncomeForm /> */}
-                            </div>
-
-                        </div>
-
-                    </div>
+            <ExpenseTracker />
        
 
       
