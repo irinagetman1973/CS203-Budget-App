@@ -1,24 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 
-import '../App.css'
-import { Navbar } from '../components/Navbar';
-import {Doughnut} from 'react-chartjs-2';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import useTransactions from '../useTransactions';
-import IncomeList from '../components/IncomeList';
-import AddIncomeForm from '../components/AddIncomeForm';
-import { AppProvider } from '../components/context/AppContext';
+import { ExpenseTrackerContext } from '../context/context';
 
-import ExpenseTracker from '../components/Main/Main';
-import List from '../components/Main/List';
+// import Form from '';
+import List from './List';
 
 
-export const Income = () => {
-    return (
-        <>
-            <Navbar />
-        
-                    <div className='container'>
+const ExpenseTracker = () => {
+  
+  const { balance } = useContext(ExpenseTrackerContext);
+
+  return (
+    <div className='container-fluid'>
+         {/* <Form /> */}
+        <div className='container'>
                         {/*  */}
                         <h1 className='mt-3'>Your Income</h1>
                         <div className='row mt-3'>
@@ -27,7 +22,7 @@ export const Income = () => {
                             </div>
                         </div>
                         <h3 className='mt-3'>
-                            {/* Income balance ${balance} */}
+                            Income balance ${balance}
                         </h3>
                         <div className='row row-n-gutters mt-3'>
                             <div className='col-sm-8'>
@@ -43,18 +38,18 @@ export const Income = () => {
                         </h3>
                         <div className='row mt-3'>
                             <div className='col-sm'>
-                                {/* <AddIncomeForm /> */}
+                                {/* <List /> */}
                             </div>
 
                         </div>
 
                     </div>
-       
+        
+    </div>
+   
+  
+   
+  );
+};
 
-      
-        </>
-    )
-}
-
-export default Income
-
+export default ExpenseTracker;
