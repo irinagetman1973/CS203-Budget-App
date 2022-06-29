@@ -3,6 +3,7 @@ import React from 'react';
 import '../App.css'
 import { Login } from '../components/Login';
 import { Navbar } from '../components/Navbar';
+import { ValidatedLoginForm } from '../components/ValidateLoginForm';
 
 
 function Log_in() {
@@ -10,6 +11,7 @@ function Log_in() {
     <>
       <Navbar />
       <Login />
+      <ValidatedLoginForm />
     </>
   )
 }
