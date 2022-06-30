@@ -1,1 +1,6 @@
-for i in $(pip list -o | awk 'NR > 2 {print $1}'); do pip install -U $i; done && pip freeze > requirements.txt
+Flask==2.1.2
+Flask_Bcrypt==1.0.1
+Flask_Login==0.6.1
+Flask_SQLAlchemy==2.5.1
+Flask_WTF==1.0.1
+WTForms==3.0.1
