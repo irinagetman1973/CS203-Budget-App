@@ -10,7 +10,6 @@
 
 }
 
-
 .btn-wrap {
     display: flex;
     align-items: center;
@@ -18,10 +17,12 @@
     width: 100%;
     object-fit: contain;
 }
-.btn-smaller{
+
+.btn-smaller {
     width: 100px;
     height: 50px;
     background-color: #FFC727;
     margin: 5px;
 }
+
 /* Irina */

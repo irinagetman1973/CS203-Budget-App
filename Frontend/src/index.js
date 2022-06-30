@@ -6,8 +6,7 @@ import { Provider } from './components/context/context';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider>
-         <App />
-
+        <App />
     </Provider>
 );
 

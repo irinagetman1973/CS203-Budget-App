@@ -7,13 +7,13 @@ import './components/Login.css'
 import './components/SignUp.css';
 import './components/DashboardPageLayout.css';
 
-import Home from '../src/pages/Home'
-import Login from '../src/pages/Login'
-import SignUp from '../src/pages/SignUp'
-import Dashboard from '../src/pages/Dashboard'
-import Expenses from '../src/pages/Expenses'
-import Income from '../src/pages/Income'
-
+import Home from './pages/Home'
+import Login from './pages/Login'
+import SignUp from './pages/SignUp'
+import Dashboard from './pages/Dashboard'
+import Expenses from './pages/Expenses'
+import Income from './pages/Income'
+import NotFound from './components/NotFound';
 
 
 //Navigation
@@ -28,6 +28,7 @@ function App() {
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/expenses' element={<Expenses />} />
           <Route path='/income' element={<Income />} />
+          <Route path='/*' element={ <NotFound />} />
         </Routes>
       </Router>
     </>

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,28 +7,25 @@ import Dashboard from '../pages/Dashboard';
 import httpClient from './httpClient';
 
 
-export const Login: React.FC = () => {
-
-    const [email, setEmail] = useState < string > ("");
-    const [password, setPassword] = useState < string > ("");
-
-    const logInUser = async () => {
-        console.log(email, password);
-
-        try {
-            const resp = await httpClient.post("//localhost:5000/login", {
-                email,
-                password,
-            });
-
-            window.location.href = "/";
-        } catch (error: any) {
-            if (error.response.status === 401) {
-                alert("Invalid credentials");
-            }
+export const Login = () => {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+  
+    const LogInUser = async () => {
+      console.log(email, password);
+  
+      try {
+        const resp = await httpClient.post("//localhost:5000/login", {
+          email,
+          password,
+        });
+        window.location.href = "/";
+      } catch (error) {
+        if (error.response.status === 401) {
+          alert("Invalid Credentials");
         }
+      }
     };
-
 
     const navigate = useNavigate();
 
@@ -46,17 +43,27 @@ export const Login: React.FC = () => {
                 {/*Log in form start*/}
                 <div className="form1">
                     <div className="form-group">
-                        <label htmlFor="username">Username:</label>
-                        <input type="text" name="username" placeholder="username" value={email} onChange={(e) => setEmail(e.target.value)} id="" />
+                        <label htmlFor="email">Email:</label>
+                        <input 
+                        type="text" 
+                        name="email" 
+                        placeholder="email" 
+                        value={email} onChange={(e) => setEmail(e.target.value)} 
+                        required />
                     </div>
                     <div className="form-group">
                         <label htmlFor="password">Password:</label>
-                        <input type="password" name="password" placeholder="password" value={passowrd} onChange={(e) => setPassword(e.target.value)} id="" />
+                        <input 
+                        type="password" 
+                        name="password" 
+                        placeholder="password" 
+                        value={password} onChange={(e) => setPassword(e.target.value)} 
+                        required />
                     </div>
                 </div>
                 <div className="footer">
                     <div className="button">
-                        <button className='btn-warning btn-lg' onClick={() => logInUser()} /*onClick={navigateToDashboard}*/ >
+                        <button className='btn-warning btn-lg' onClick={() => LogInUser() & navigateToDashboard} >
                             Log in
                         </button>
                         <Routes>
