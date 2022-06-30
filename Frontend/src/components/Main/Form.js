@@ -7,16 +7,19 @@ import { ExpenseTrackerContext } from '../context/context';
 import { incomeCategories, expenseCategories } from '../../constants/categories';
 
 
-// const initialState = {
-//   amount: '',
-//   category: '',
-//   type: 'Income',
+const initialState = {
+  amount: '',
+  category: '',
+  type: 'Income',
 //   date: formatDate(new Date()),
-// };
+};
 
-const NewTransactionForm = () => {
+
+const Form = () => {
     
-        <form>
+const [formData, setFormData] = useState(initialState)
+const {addTransaction}=useContext(ExpenseTrackerContext)
+      return(
             <div class="form-group">
                 <label for ='sel1'>Please select category:</label>
                 <select class="form-control" id='sel1'>
@@ -33,8 +36,8 @@ const NewTransactionForm = () => {
                 </select>
 
             </div>
-      </form>
-  
+    
+      );  
 };
 
-export default NewTransactionForm;
+export default Form;
