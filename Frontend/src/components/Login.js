@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Dashboard from '../pages/Dashboard';
 import httpClient from './httpClient';
 
-
+//Login page
 export const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -21,6 +21,7 @@ export const Login = () => {
             });
             window.location.href = "/";
         } catch (error) {
+            //Error message if invalid credentials entered
             if (error.response.status === 401) {
                 alert("Invalid Credentials");
             }

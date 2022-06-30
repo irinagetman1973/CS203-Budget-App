@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+//404 Not found links back to home page
 export const NotFound = () => {
   return (
     <div>
@@ -13,3 +14,5 @@ export const NotFound = () => {
 };
 
 export default NotFound;
+
+{/*Brittany */}

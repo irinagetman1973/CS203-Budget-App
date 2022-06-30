@@ -1,6 +1,7 @@
 import { createContext, useReducer } from "react";
 import React from "react";
 
+//Using reducer to update states and re-render the components
 const AppReducer = (state, action) => {
 	switch (action.type) {
 		case 'ADD_EXPENSE':
@@ -47,7 +48,9 @@ const AppReducer = (state, action) => {
 	}
 }
 
+//Initial state for variables
 const initialState = {
+	fname: [],
 	budget: 0,
 	expenses: [],
 	income: [],
@@ -61,6 +64,7 @@ export const AppProvider = (props) => {
 	return (
 		<AppContext.Provider
 			value={{
+				fname: state.fname,
 				budget: state.budget,
 				expenses: state.expenses,
 				income: state.income,
@@ -74,7 +78,7 @@ export const AppProvider = (props) => {
 
 export default AppContext
 
-
+{/* Brittany */ }
 
 
 export const contextReducer = (state, action) => {

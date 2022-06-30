@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AppContext } from './context/AppContext';
 
+//Calculates the Expense total for the Expense page 
 export const ExpenseTotal = () => {
     const { expenses } = useContext(AppContext)
 

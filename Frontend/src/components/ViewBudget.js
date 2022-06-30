@@ -1,5 +1,6 @@
 import React from 'react';
 
+//Displays budget for budget page
 export const ViewBudget = (props) => {
 	return (
 		<>

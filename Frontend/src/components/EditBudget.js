@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-
+//Editing budget for budget page
 export const EditBudget = (props) => {
 
 	const [value, setValue] = useState(props.budget);

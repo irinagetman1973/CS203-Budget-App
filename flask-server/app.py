@@ -14,6 +14,7 @@ bcrypt = Bcrypt(app)
 cors = CORS(app, supports_credentials=True)
 server_session = Session(app)
 
+#Creating database tables
 with app.app_context():
     db.create_all()
 
@@ -67,7 +68,7 @@ def login_user():
     #Getting user by email
     user = User.query.filter_by(email=email).first()
 
-    #Error message for if user is already registered
+    #Error message for if user is hasn't registered
     if user is None:
         return jsonify({"error": "Unauthorized"}), 401
 

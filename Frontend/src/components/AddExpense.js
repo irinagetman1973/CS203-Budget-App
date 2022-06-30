@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { AppContext } from './context/AppContext';
 
-
+//Adding an expense to the expense page
 export const AddExpense = () => {
     const { dispatch } = useContext(AppContext)
 
@@ -19,6 +19,7 @@ export const AddExpense = () => {
             cost: parseInt(cost),
         }
 
+        //Using AppContext to update and re-render components
         dispatch({
             type: 'ADD_EXPENSE',
             payload: expense,
@@ -29,6 +30,7 @@ export const AddExpense = () => {
     }
 
     return (
+        //Add expense form
         <form on onSubmit={onSubmit}>
             <div className='row'>
                 <div className='col-sm'>

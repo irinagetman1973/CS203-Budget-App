@@ -3,7 +3,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import ExpenseItem from './ExpenseItem';
 import { AppContext } from '../components/context/AppContext';
 
-
+//Expense List for the Expense page
 export const ExpenseList = () => {
 	const { expenses } = useContext(AppContext)
 

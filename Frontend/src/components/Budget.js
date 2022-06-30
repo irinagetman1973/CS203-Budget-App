@@ -4,7 +4,7 @@ import EditBudget from './EditBudget';
 import ViewBudget from './ViewBudget';
 import { AppContext } from '../components/context/AppContext';
 
-
+//Budget page for Expense page
 export const Budget = () => {
     const { budget, dispatch } = useContext(AppContext)
 
@@ -14,6 +14,7 @@ export const Budget = () => {
         setIsEditing(true)
     }
 
+    //Using AppContext to update and re-render components
     const handleSaveClick = (value) => {
         dispatch({
             type: 'SET_BUDGET',
@@ -22,6 +23,7 @@ export const Budget = () => {
         setIsEditing(false)
     }
 
+    //Allows the user to edit and view their budget
     return (
         <div className='alert alert-dark p-2 d-flex align-items-center justify-content-between'>
             {isEditing ? (

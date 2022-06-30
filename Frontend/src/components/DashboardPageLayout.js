@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-
 import { HiPlus, HiMinus } from 'react-icons/hi'
-
 
 import '../App.css';
 import './DashboardPageLayout.css'
@@ -13,12 +11,13 @@ import Expenses from '../pages/Expenses';
 import Income from '../pages/Income';
 import EditProfile from "./EditProfile";
 import Sign_Up from "../pages/SignUp";
-
 import httpClient from "./httpClient";
 import { Users } from '../types';
 
-
+//User Account
 export const DashboardPageLayout = () => {
+
+    //Creating navigation to Expense and Income pages
     const navigate = useNavigate();
 
     const navigateToExpenses = () => {
@@ -45,6 +44,7 @@ export const DashboardPageLayout = () => {
                         </div>
                         <div className="greeting">
                             <h1>
+                                {/*Is meant to display user input name */}
                                 Hi {Sign_Up.fname}
                             </h1>
                             <p>Here is your own space</p>
@@ -91,4 +91,4 @@ export default DashboardPageLayout
 
 //Irina
 
-{/*Brittany*/}
+{/*Brittany*/ }

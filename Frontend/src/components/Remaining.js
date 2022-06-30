@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AppContext } from './context/AppContext';
 
+//Remaining balance for the budget page
 export const Remaining = () => {
     const { expenses, budget } = useContext(AppContext)
 

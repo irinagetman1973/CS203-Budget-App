@@ -1,11 +1,9 @@
 import React, { useContext, useState } from 'react';
 
-
+//Editing profile and the dashboard
 export const EditProfile = (props) => {
 
-
-	const [value, setFname] = useState("");
-
+	const [value, setValue] = useState(props.fname);
 
 	return (
 		<>
@@ -15,11 +13,12 @@ export const EditProfile = (props) => {
 				class='form-control mr-3'
 				id='name'
 				value={value}
-				onChange={(event) => setFname(event.target.value)}
+				onChange={(event) => setValue(event.target.value)}
 			/>
 			<button
 				type='button'
 				class='btn btn-primary'
+				//Unable to save input
 				onClick={() => props.handleSaveClick(value)}
 			>
 				Save

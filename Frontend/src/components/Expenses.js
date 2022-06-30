@@ -9,7 +9,7 @@ import { ExpenseTotal } from './ExpenseTotal';
 import { ExpenseList } from './ExpenseList';
 import { AppProvider } from './context/AppContext';
 
-
+//Expense page
 export const Expenses = () => {
     return (
         <AppProvider>

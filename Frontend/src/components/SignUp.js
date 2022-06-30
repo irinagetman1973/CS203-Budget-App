@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import httpClient from './httpClient';
 
+//Sign Up Page
 export const SignUp = () => {
     const [fname, setFname] = useState("");
     const [email, setEmail] = useState("");
@@ -15,12 +16,13 @@ export const SignUp = () => {
 
         try {
             const resp = await httpClient.post("//localhost:3000/signup", {
-                fname, 
+                fname,
                 email,
                 password,
             });
             window.location.href = "/";
         } catch (error) {
+            //Shows error message if the credentials are invalid
             if (error.response.status === 401) {
                 alert("Invalid Credentials");
             }
@@ -35,9 +37,12 @@ export const SignUp = () => {
 
     return (
         <>
+            {/* Background image */}
             <div className="image"></div>
             <div className="base-container">
+                {/*Title */}
                 <div className="header2">CREATE NEW ACCOUNT:</div>
+                {/*Sign up form start */}
                 <div className="form2">
                     <div className="form-group">
                         <label htmlFor="firstname">First Name:</label>
