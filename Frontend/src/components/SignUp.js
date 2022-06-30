@@ -42,55 +42,57 @@ export const SignUp = () => {
                 <div className="form2">
                     <div className="form-group">
                         <label htmlFor="firstname">First Name:</label>
-                        <input 
-                        type="text" 
-                        name="firstname" 
-                        placeholder="First Name" 
-                        value={fname} onChange={(e) => setfname(e.target.value)} 
-                        required />
+                        <input
+                            type="text"
+                            name="firstname"
+                            placeholder="First Name"
+                            value={fname} onChange={(e) => setfname(e.target.value)}
+                            required />
                     </div>
                     <div className="form-group">
                         <label htmlFor="lastname">Last Name:</label>
-                        <input 
-                        type="text" 
-                        name="lastname" 
-                        placeholder="Last Name" 
-                        value={lname} onChange={(e) => setlname(e.target.value)} 
-                        required />
+                        <input
+                            type="text"
+                            name="lastname"
+                            placeholder="Last Name"
+                            value={lname} onChange={(e) => setlname(e.target.value)}
+                            required />
                     </div>
                     <div className="form-group">
                         <label htmlFor="email">E-mail:</label>
-                        <input 
-                        type="text" 
-                        name="email" 
-                        placeholder="E-mail" 
-                        value={email} onChange={(e) => setEmail(e.target.value)} 
-                        required />
+                        <input
+                            type="text"
+                            name="email"
+                            placeholder="E-mail"
+                            value={email} onChange={(e) => setEmail(e.target.value)}
+                            required />
                     </div>
                     <div className="form-group">
                         <label htmlFor="password">Password:</label>
-                        <input 
-                        type="password" 
-                        name="password" 
-                        placeholder="Password" 
-                        value={password} onChange={(e) => setPassword(e.target.value)} 
-                        required />
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Password"
+                            value={password} onChange={(e) => setPassword(e.target.value)}
+                            required />
                     </div>
                     <div className="form-group">
                         <label htmlFor="password">Confirm Password:</label>
-                        <input 
-                        type="password" 
-                        name="password" 
-                        placeholder="Password"  
-                        required />
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Password"
+                            required />
                     </div>
                     <div className="button">
-                        <button className='btn-warning btn-lg' onClick={() => User_SignUp() & navigateToDashboard} >
-                            Sign Up
+                        <button className='btn-warning btn-lg' onClick={() => User_SignUp()}>
+                            <button className='btn-warning btn-lg' onClick={navigateToDashboard} >
+                                Sign Up
+                            </button>
                         </button>
-                         <Routes>
+                        <Routes>
                             <Route path="/Dashboard" element={<Dashboard />} />
-                        </Routes> 
+                        </Routes>
                     </div>
                 </div>
                 <div className="footer">

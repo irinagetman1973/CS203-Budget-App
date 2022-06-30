@@ -63,8 +63,10 @@ export const Login = () => {
                 </div>
                 <div className="footer">
                     <div className="button">
-                        <button className='btn-warning btn-lg' onClick={() => LogInUser() & navigateToDashboard} >
-                            Log in
+                    <button className='btn-warning btn-lg' onClick={() => LogInUser()}>
+                            <button className='btn-warning btn-lg' onClick={navigateToDashboard} >
+                                Log In
+                            </button>
                         </button>
                         <Routes>
                             <Route path="/Dashboard" element={<Dashboard />} />
