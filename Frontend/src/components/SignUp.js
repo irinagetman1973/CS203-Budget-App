@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Route, Routes, useNavigate, Link } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -7,8 +7,6 @@ import Dashboard from '../pages/Dashboard';
 import httpClient from './httpClient';
 
 export const SignUp = () => {
-    const [fname, setfname] = useState("");
-    const [lname, setlname] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -16,7 +14,7 @@ export const SignUp = () => {
         console.log(email, password);
 
         try {
-            const resp = await httpClient.post("//localhost:5000/signup", {
+            const resp = await httpClient.post("//localhost:3000/signup", {
                 email,
                 password,
             });
@@ -46,7 +44,6 @@ export const SignUp = () => {
                             type="text"
                             name="firstname"
                             placeholder="First Name"
-                            value={fname} onChange={(e) => setfname(e.target.value)}
                             required />
                     </div>
                     <div className="form-group">
@@ -55,7 +52,6 @@ export const SignUp = () => {
                             type="text"
                             name="lastname"
                             placeholder="Last Name"
-                            value={lname} onChange={(e) => setlname(e.target.value)}
                             required />
                     </div>
                     <div className="form-group">
@@ -84,7 +80,7 @@ export const SignUp = () => {
                             placeholder="Password"
                             required />
                     </div>
-                    <div className="button">
+                    {/* <div className="button">
                         <button className='btn-warning btn-lg' onClick={() => User_SignUp()}>
                             <button className='btn-warning btn-lg' onClick={navigateToDashboard} >
                                 Sign Up
@@ -93,7 +89,12 @@ export const SignUp = () => {
                         <Routes>
                             <Route path="/Dashboard" element={<Dashboard />} />
                         </Routes>
-                    </div>
+                    </div> */}
+                    <Link to={'/Dashboard'}>
+                        <button className='btn-warning btn-lg' onClick={() => User_SignUp()}>
+                            Sign Up
+                        </button>
+                    </Link>
                 </div>
                 <div className="footer">
 

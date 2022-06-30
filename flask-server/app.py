@@ -1,3 +1,4 @@
+from email import header
 from flask import Flask, request, jsonify, session
 from flask_bcrypt import Bcrypt
 from flask_cors import CORS, cross_origin
@@ -12,8 +13,6 @@ db.init_app(app)
 bcrypt = Bcrypt(app)
 cors = CORS(app, supports_credentials=True)
 server_session = Session(app)
-
-
 
 with app.app_context():
     db.create_all()
@@ -33,7 +32,7 @@ def get_current_user():
         "email": user.email
     }) 
 
-@app.route("/register", methods=["POST"])
+@app.route("/signup", methods=["POST"])
 
 def register_user():
     email = request.json["email"]
@@ -60,6 +59,7 @@ def register_user():
     })
 
 @app.route("/login", methods=["POST"])
+
 def login_user():
     email = request.json["email"]
     password = request.json["password"]
@@ -83,6 +83,7 @@ def login_user():
     })
 
 @app.route("/logout", methods=["POST"])
+
 def logout_user():
     session.pop("user_id")
     return "200"
