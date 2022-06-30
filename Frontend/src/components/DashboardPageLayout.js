@@ -12,6 +12,7 @@ import './DashboardPageLayout.css'
 import Expenses from '../pages/Expenses';
 import Income from '../pages/Income';
 import EditProfile from "./EditProfile";
+import Sign_Up from "../pages/SignUp";
 
 import httpClient from "./httpClient";
 import { Users } from '../types';
@@ -33,9 +34,6 @@ export const DashboardPageLayout = () => {
         setIsShown(true)
     }
 
-    var fname = sessionStorage.getItem("fName");
-    console.log(fname);
-
     return (
         <>
             <div className="db-layout">
@@ -47,7 +45,7 @@ export const DashboardPageLayout = () => {
                         </div>
                         <div className="greeting">
                             <h1>
-                                Hi {Users}
+                                Hi {Sign_Up.fname}
                             </h1>
                             <p>Here is your own space</p>
                             <button className="btn-warning btn-lg" onClick={handleClick}>

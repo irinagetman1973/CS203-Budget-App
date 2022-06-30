@@ -3,18 +3,19 @@ import { Route, Routes, useNavigate, Link } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Dashboard from '../pages/Dashboard';
 import httpClient from './httpClient';
 
 export const SignUp = () => {
+    const [fname, setFname] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
     const User_SignUp = async () => {
-        console.log(email, password);
+        console.log(fname, email, password);
 
         try {
             const resp = await httpClient.post("//localhost:3000/signup", {
+                fname, 
                 email,
                 password,
             });
@@ -44,6 +45,7 @@ export const SignUp = () => {
                             type="text"
                             name="firstname"
                             placeholder="First Name"
+                            value={fname} onChange={(e) => setFname(e.target.value)}
                             required />
                     </div>
                     <div className="form-group">

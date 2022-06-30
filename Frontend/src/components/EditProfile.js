@@ -1,19 +1,21 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 
 
 export const EditProfile = (props) => {
 
-	const [value, setValue] = useState(props.EditProfile);
+
+	const [value, setFname] = useState("");
+
 
 	return (
 		<>
 			<input
-				required='required'
+				placeholder="Name"
 				type='name'
 				class='form-control mr-3'
 				id='name'
 				value={value}
-				onChange={(event) => setValue(event.target.value)}
+				onChange={(event) => setFname(event.target.value)}
 			/>
 			<button
 				type='button'

@@ -25,6 +25,11 @@ const AppReducer = (state, action) => {
 				...state,
 				profile: action.payload,
 			}
+		case 'SET_NAME':
+			return {
+				...state,
+				fname: action.payload
+			}
 		case 'ADD_INCOME':
 			return {
 				...state,
