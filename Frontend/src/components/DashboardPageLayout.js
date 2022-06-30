@@ -13,6 +13,9 @@ import Expenses from '../pages/Expenses';
 import Income from '../pages/Income';
 import EditProfile from "./EditProfile";
 
+import httpClient from "./httpClient";
+import { Users } from '../types';
+
 
 export const DashboardPageLayout = () => {
     const navigate = useNavigate();
@@ -44,7 +47,7 @@ export const DashboardPageLayout = () => {
                         </div>
                         <div className="greeting">
                             <h1>
-                                Hi
+                                Hi {Users}
                             </h1>
                             <p>Here is your own space</p>
                             <button className="btn-warning btn-lg" onClick={handleClick}>
