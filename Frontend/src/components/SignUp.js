@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 
-import './Buttons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Dashboard from '../pages/Dashboard';

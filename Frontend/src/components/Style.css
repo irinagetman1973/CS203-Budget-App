@@ -6,7 +6,7 @@
 }
 
 .image {
-  background-image: url(../../public/images/tiles_yellow.png);
+  background-image: url(../images/tiles_yellow.png);
   width: 55%;
   height: 100%;
   display: block;
