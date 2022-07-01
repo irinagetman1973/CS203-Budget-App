@@ -12,7 +12,7 @@ import Income from '../pages/Income';
 import EditProfile from "./EditProfile";
 import Sign_Up from "../pages/SignUp";
 import httpClient from "./httpClient";
-// import { Users } from '';
+import { Users } from '../types';
 
 //User Account
 export const DashboardPageLayout = () => {

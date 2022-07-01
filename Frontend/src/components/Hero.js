@@ -7,7 +7,9 @@ export const Hero = () => {
       <h1 >
         Don't get trapped. Learn safer ways to spend this year
       </h1>
-      <img src='../images/Investing-cuate 1.png' alt='grow money' />
+      <div>
+        <img />
+      </div>
     </div>
   )
 }
