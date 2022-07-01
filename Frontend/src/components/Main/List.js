@@ -15,9 +15,10 @@ const List = () => {
               {transaction.category}
               <div>
                   <span className='tag tag-primary tag-pill mr-3'>
-                      $ {transaction.amount}
-                    </span>
-                    <TiDelete size='1.5em'onClick={() => deleteTransaction(transaction.id)} ></TiDelete>
+                      {/* $ {transaction.amount} */}
+                      {`$${transaction.amount}           ${transaction.date}`}
+                  </span>
+                  <TiDelete size='1.5em'onClick={() => deleteTransaction(transaction.id)} ></TiDelete>
               </div>
           </li>
         ))}
